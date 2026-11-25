@@ -40,10 +40,18 @@ public class FinanceReport {
         payments[index] = payment;
     }
 
-    public String getAuthor() { return author; }
-    public int getDay() { return day; }
-    public int getMonth() { return month; }
-    public int getYear() { return year; }
+    public String getAuthor() {
+        return author;
+    }
+    public int getDay() {
+        return day;
+    }
+    public int getMonth() {
+        return month;
+    }
+    public int getYear() {
+        return year;
+    }
 
     @Override
     public String toString() {

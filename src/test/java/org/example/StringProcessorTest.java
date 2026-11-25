@@ -1,4 +1,5 @@
-import org.example.StringProcessor;
+package org.example;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -56,7 +57,7 @@ class StringProcessorTest {
 
     @Test
     void reverseWordsExample() {
-        assertEquals(" dd cc bbb aaa", sp.reverseWords(" aaa bbb cc dd"));
+        assertEquals(" dd cc bbb  aaa   ", sp.reverseWords(" aaa bbb cc  dd   "));
     }
 
     @Test

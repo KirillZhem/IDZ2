@@ -31,21 +31,21 @@ public class StringProcessor {
         return count;
     }
 
-    public String replaceDigits(String s) {
-        String result = "";
+    public String replaceDigits(String s) {//!!!!!!!!!
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '1') {
-                result = result + "один";
+                result.append("один");
             } else if (c == '2') {
-                result = result + "два";
+                result.append("два");
             } else if (c == '3') {
-                result = result + "три";
+                result.append("три");
             } else {
-                result = result + c;
+                result.append(c);
             }
         }
-        return result;
+        return result.toString();
     }
 
     public void removeEverySecond(StringBuilder sb) {
@@ -89,7 +89,7 @@ public class StringProcessor {
         }
         return result.toString();
     }
-    public String replaceHex(String s) {
+    public String replaceHex(String s) {//!!!!!
         StringBuilder result = new StringBuilder();
         int i = 0;
         while (i < s.length()) {

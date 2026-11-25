@@ -7,7 +7,7 @@ public class Payment {
     private int day;
     private int month;
     private int year;
-    private int amount; // сумма в копейках
+    private int amount;
 
     public Payment(String fullName, int day, int month, int year, int amount) {
         this.fullName = fullName;
@@ -62,8 +62,12 @@ public class Payment {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Payment payment = (Payment) o;
         return day == payment.day &&
                 month == payment.month &&
