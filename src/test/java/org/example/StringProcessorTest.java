@@ -23,6 +23,7 @@ class StringProcessorTest {
 
     @Test
     void countOccurrencesNormal() {
+
         assertEquals(2, sp.countOccurrences("abcabc", "abc"));
     }
 
