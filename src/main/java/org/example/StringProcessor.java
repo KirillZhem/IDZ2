@@ -95,8 +95,8 @@ public class StringProcessor {
         while (i < s.length()) {
             if (i + 10 <= s.length() && s.charAt(i) == '0' && s.charAt(i + 1) == 'x'
                     && isHex(s.substring(i + 2, i + 10))) {
-                String hex = s.substring(i + 2, i + 10);
-                long number = Long.parseLong(hex, 16);
+                String hex = s.substring(i + 2, i + 10);//ровно 8 символов вырезали
+                long number = Long.parseLong(hex, 16);//перевели в 16
                 result.append(number);
                 i = i + 10;
             } else {

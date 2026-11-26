@@ -58,7 +58,7 @@ public class FinanceReport {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("[Автор: %s, дата: %d.%d.%d, Платежи: [\n", author, day, month, year));
 
-        for (Payment p : payments) {
+        for (Payment p : payments) {//for=each(для каждого p из массива payments)
             sb.append(String.format("Плательщик: %s, дата: %d.%d.%d сумма: %d руб. %02d коп.\n",
                     p.getFullName(), p.getDay(), p.getMonth(), p.getYear(),
                     p.getAmount() / 100, p.getAmount() % 100));
